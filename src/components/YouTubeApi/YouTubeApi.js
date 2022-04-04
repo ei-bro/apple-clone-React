@@ -5,7 +5,7 @@ function YouTubeApi() {
 
     useEffect(() => {
         fetch(
-            "https://www.googleapis.com/youtube/v3/search?key=AIzaSyCSyP54oWkk2b3xMSKNjW6d1sQZfJudvD0&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=9"
+            "https://www.googleapis.com/youtube/v3/search?key={ YOUR API KEY }&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=9"
         )
             .then((response) => {
                 return response.json();
